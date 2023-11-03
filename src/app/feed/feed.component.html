@@ -1,0 +1,6 @@
+<div class="feed">
+  <div class="post" *ngFor="let post of posts">
+    <p>{{ post.text }}</p>
+    <button (click)="deletePost(post.id)">Delete</button>
+  </div>
+</div>
